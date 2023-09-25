@@ -1,7 +1,7 @@
 {
 	"name": "@tldraw/tldraw",
 	"description": "A tiny little drawing editor.",
-	"version": "2.0.0-alpha.14",
+	"version": "2.0.0-canary.b6ebe1e2749e",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
@@ -25,9 +25,7 @@
 		"canvas",
 		"infinite"
 	],
-	"/* NOTE */": "These `main` and `types` fields are rewritten by the build script. They are not the actual values we publish",
-	"main": "./src/index.ts",
-	"types": "./.tsbuild/index.d.ts",
+	"main": "dist-cjs/index.js",
 	"scripts": {
 		"test": "lazy inherit",
 		"test-coverage": "lazy inherit",
@@ -41,7 +39,10 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"files": [
-		"tldraw.css"
+		"tldraw.css",
+		"dist-esm",
+		"dist-cjs",
+		"src"
 	],
 	"dependencies": {
 		"@radix-ui/react-alert-dialog": "^1.0.0",
@@ -52,7 +53,7 @@
 		"@radix-ui/react-select": "^1.2.0",
 		"@radix-ui/react-slider": "^1.1.0",
 		"@radix-ui/react-toast": "^1.1.1",
-		"@tldraw/editor": "workspace:*",
+		"@tldraw/editor": "2.0.0-canary.b6ebe1e2749e",
 		"canvas-size": "^1.2.6",
 		"classnames": "^2.3.2",
 		"hotkeys-js": "^3.11.2",
@@ -99,5 +100,14 @@
 		"setupFilesAfterEnv": [
 			"../../config/setupJest.ts"
 		]
+	},
+	"module": "dist-esm/index.mjs",
+	"source": "src/index.ts",
+	"exports": {
+		".": {
+			"import": "./dist-esm/index.mjs",
+			"require": "./dist-cjs/index.js"
+		},
+		"./tldraw.css": "./tldraw.css"
 	}
 }
