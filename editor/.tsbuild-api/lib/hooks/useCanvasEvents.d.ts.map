@@ -1,0 +1,1 @@
+{"version":3,"file":"useCanvasEvents.d.ts","sourceRoot":"","sources":["../../../src/lib/hooks/useCanvasEvents.ts"],"names":[],"mappings":"AAAA,OAAO,KAAkB,MAAM,OAAO,CAAA;AAKtC,wBAAgB,eAAe;uBAQF,kBAAkB;uBAyBlB,kBAAkB;qBAepB,kBAAkB;oBAkCnB,eAAe,CAAC,OAAO,CAAC;gBAItB,eAAe,CAAC,OAAO,CAAC;sBAtBxB,gBAAgB;oBAQlB,gBAAgB;EA0CzC"}

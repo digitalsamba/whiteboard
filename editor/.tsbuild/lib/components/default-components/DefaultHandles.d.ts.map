@@ -1,0 +1,1 @@
+{"version":3,"file":"DefaultHandles.d.ts","sourceRoot":"","sources":["../../../../src/lib/components/default-components/DefaultHandles.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,OAAO,CAAA;AAErC,cAAc;AACd,MAAM,MAAM,kBAAkB,GAAG,aAAa,CAAC;IAC9C,SAAS,CAAC,EAAE,MAAM,CAAA;IAClB,QAAQ,EAAE,GAAG,CAAA;CACb,CAAC,CAAA;AAEF,cAAc;AACd,eAAO,MAAM,cAAc,EAAE,kBAE5B,CAAA"}

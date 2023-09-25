@@ -1,0 +1,1 @@
+{"version":3,"file":"useHandleEvents.d.ts","sourceRoot":"","sources":["../../../src/lib/hooks/useHandleEvents.ts"],"names":[],"mappings":"AAAA,OAAO,EAA6B,SAAS,EAAE,MAAM,kBAAkB,CAAA;AACvE,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAY9B,wBAAgB,eAAe,CAAC,EAAE,EAAE,SAAS,EAAE,QAAQ,EAAE,MAAM;uBAInC,kBAAkB;uBAwBlB,kBAAkB;qBAoBpB,kBAAkB;EA0B3C"}

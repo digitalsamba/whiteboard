@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/version.ts"],
+  "sourcesContent": ["/** @internal */\nexport const version = '2.0.0-alpha.12'\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACO,MAAM,UAAU;",
+  "names": []
+}

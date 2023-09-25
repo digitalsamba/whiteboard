@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/lib/utils/blobAsString.ts"],
+  "sourcesContent": ["/** @public */\nexport async function blobAsString(blob: Blob) {\n\treturn new Promise<string>((resolve, reject) => {\n\t\tconst reader = new FileReader()\n\t\treader.addEventListener('loadend', () => {\n\t\t\tconst text = reader.result\n\t\t\tresolve(text as string)\n\t\t})\n\t\treader.addEventListener('error', () => {\n\t\t\treject(reader.error)\n\t\t})\n\t\treader.readAsText(blob)\n\t})\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AACA,eAAsB,aAAa,MAAY;AAC9C,SAAO,IAAI,QAAgB,CAAC,SAAS,WAAW;AAC/C,UAAM,SAAS,IAAI,WAAW;AAC9B,WAAO,iBAAiB,WAAW,MAAM;AACxC,YAAM,OAAO,OAAO;AACpB,cAAQ,IAAc;AAAA,IACvB,CAAC;AACD,WAAO,iBAAiB,SAAS,MAAM;AACtC,aAAO,OAAO,KAAK;AAAA,IACpB,CAAC;AACD,WAAO,WAAW,IAAI;AAAA,EACvB,CAAC;AACF;",
+  "names": []
+}

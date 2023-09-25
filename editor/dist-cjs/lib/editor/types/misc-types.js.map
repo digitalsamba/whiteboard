@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../src/lib/editor/types/misc-types.ts"],
+  "sourcesContent": ["/** @public */\nexport type RequiredKeys<T, K extends keyof T> = Partial<Omit<T, K>> & Pick<T, K>\n/** @public */\nexport type OptionalKeys<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}

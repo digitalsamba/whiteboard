@@ -1,0 +1,1 @@
+{"version":3,"file":"CropHandles.d.ts","sourceRoot":"","sources":["../../../src/lib/canvas/CropHandles.tsx"],"names":[],"mappings":";AAGA,UAAU,gBAAgB;IACzB,IAAI,EAAE,MAAM,CAAA;IACZ,KAAK,EAAE,MAAM,CAAA;IACb,MAAM,EAAE,MAAM,CAAA;IACd,oBAAoB,EAAE,OAAO,CAAA;CAC7B;AAED,wBAAgB,WAAW,CAAC,EAAE,IAAI,EAAE,KAAK,EAAE,MAAM,EAAE,oBAAoB,EAAE,EAAE,gBAAgB,eA4G1F"}

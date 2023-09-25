@@ -1,0 +1,1 @@
+{"version":3,"file":"Shape.d.ts","sourceRoot":"","sources":["../../../src/lib/components/Shape.tsx"],"names":[],"mappings":"AACA,OAAO,EAAE,OAAO,EAAE,SAAS,EAAE,MAAM,kBAAkB,CAAA;AACrD,OAAO,KAAK,KAAK,MAAM,OAAO,CAAA;AAC9B,OAAO,EAAE,SAAS,EAAE,MAAM,4BAA4B,CAAA;AAkBtD,eAAO,MAAM,KAAK;QASb,SAAS;WACN,OAAO;UACR,SAAS;WACR,MAAM;qBACI,MAAM;aACd,MAAM;cACL,OAAO;yBAyGhB,CAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"useAssetUrls.d.ts","sourceRoot":"","sources":["../../../../src/lib/ui/hooks/useAssetUrls.tsx"],"names":[],"mappings":";AACA,OAAO,EAAE,aAAa,EAAE,MAAM,cAAc,CAAA;AAO5C,gBAAgB;AAChB,wBAAgB,iBAAiB,CAAC,EACjC,SAAS,EACT,QAAQ,GACR,EAAE;IACF,SAAS,EAAE,aAAa,CAAA;IACxB,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAA;CACzB,eAEA;AAED,gBAAgB;AAChB,wBAAgB,YAAY,kBAO3B"}

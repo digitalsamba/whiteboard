@@ -1,0 +1,1 @@
+{"version":3,"file":"RootState.d.ts","sourceRoot":"","sources":["../../../../src/lib/editor/tools/RootState.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,eAAe,EAAE,MAAM,sBAAsB,CAAA;AACtD,OAAO,EAAE,SAAS,EAAE,MAAM,aAAa,CAAA;AAEvC,qBAAa,SAAU,SAAQ,SAAS;IACvC,OAAgB,EAAE,SAAS;IAC3B,OAAgB,OAAO,SAAK;IAC5B,OAAgB,QAAQ,gBAAW;IAE1B,SAAS,EAAE,eAAe,CAAC,WAAW,CAAC,CAc/C;CACD"}

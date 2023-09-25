@@ -1,0 +1,1 @@
+{"version":3,"file":"useContainer.d.ts","sourceRoot":"","sources":["../../../src/lib/hooks/useContainer.tsx"],"names":[],"mappings":";AAKA,gBAAgB;AAChB,wBAAgB,iBAAiB,CAAC,EACjC,SAAS,EACT,QAAQ,GACR,EAAE;IACF,SAAS,EAAE,cAAc,CAAA;IACzB,QAAQ,EAAE,KAAK,CAAC,SAAS,CAAA;CACzB,eAEA;AAED,cAAc;AACd,wBAAgB,YAAY,IAAI,cAAc,CAE7C"}

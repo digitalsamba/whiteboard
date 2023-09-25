@@ -1,0 +1,44 @@
+import { Editor, MigrationFailureReason, Result, SerializedSchema, TLSchema, TLStore, UnknownRecord } from '@tldraw/editor';
+import { TLUiToastsContextType } from '../ui/hooks/useToastsProvider';
+import { TLUiTranslationKey } from '../ui/hooks/useTranslation/TLUiTranslationKey';
+/** @public */
+export declare const TLDRAW_FILE_MIMETYPE: "application/vnd.tldraw+json";
+/** @public */
+export declare const TLDRAW_FILE_EXTENSION: ".tldr";
+/** @public */
+export interface TldrawFile {
+    tldrawFileFormatVersion: number;
+    schema: SerializedSchema;
+    records: UnknownRecord[];
+}
+/** @public */
+export declare function isV1File(data: any): boolean;
+/** @public */
+export type TldrawFileParseError = {
+    type: 'fileFormatVersionTooNew';
+    version: number;
+} | {
+    type: 'invalidRecords';
+    cause: unknown;
+} | {
+    type: 'migrationFailed';
+    reason: MigrationFailureReason;
+} | {
+    type: 'notATldrawFile';
+    cause: unknown;
+} | {
+    type: 'v1File';
+    data: any;
+};
+/** @public */
+export declare function parseTldrawJsonFile({ json, schema, }: {
+    schema: TLSchema;
+    json: string;
+}): Result<TLStore, TldrawFileParseError>;
+/** @public */
+export declare function serializeTldrawJson(store: TLStore): Promise<string>;
+/** @public */
+export declare function serializeTldrawJsonBlob(store: TLStore): Promise<Blob>;
+/** @internal */
+export declare function parseAndLoadDocument(editor: Editor, document: string, msg: (id: TLUiTranslationKey) => string, addToast: TLUiToastsContextType['addToast'], onV1FileLoad?: () => void, forceDarkMode?: boolean): Promise<void>;
+//# sourceMappingURL=file.d.ts.map

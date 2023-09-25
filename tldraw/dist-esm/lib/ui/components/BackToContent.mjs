@@ -1,0 +1,45 @@
+import { jsx } from "react/jsx-runtime";
+import { useEditor } from "@tldraw/editor";
+import { useEffect, useState } from "react";
+import { useActions } from "../hooks/useActions.mjs";
+import { Button } from "./primitives/Button.mjs";
+function BackToContent() {
+  const editor = useEditor();
+  const actions = useActions();
+  const action = actions["back-to-content"];
+  const [showBackToContent, setShowBackToContent] = useState(false);
+  useEffect(() => {
+    let showBackToContentPrev = false;
+    const interval = setInterval(() => {
+      const { renderingShapes, renderingBounds } = editor;
+      const visibleShapes = renderingShapes.filter(
+        (s) => s.maskedPageBounds && renderingBounds.includes(s.maskedPageBounds)
+      );
+      const showBackToContentNow = visibleShapes.length === 0 && editor.currentPageShapes.length > 0;
+      if (showBackToContentPrev !== showBackToContentNow) {
+        setShowBackToContent(showBackToContentNow);
+        showBackToContentPrev = showBackToContentNow;
+      }
+    }, 1e3);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [editor]);
+  if (!showBackToContent)
+    return null;
+  return /* @__PURE__ */ jsx(
+    Button,
+    {
+      iconLeft: action.icon,
+      label: action.label,
+      onClick: () => {
+        action.onSelect("helper-buttons");
+        setShowBackToContent(false);
+      }
+    }
+  );
+}
+export {
+  BackToContent
+};
+//# sourceMappingURL=BackToContent.mjs.map

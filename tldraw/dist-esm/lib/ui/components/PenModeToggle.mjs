@@ -1,0 +1,24 @@
+import { jsx } from "react/jsx-runtime";
+import { track, useEditor } from "@tldraw/editor";
+import { useActions } from "../hooks/useActions.mjs";
+import { Button } from "./primitives/Button.mjs";
+const ExitPenMode = track(function ExitPenMode2() {
+  const editor = useEditor();
+  const isPenMode = editor.instanceState.isPenMode;
+  const actions = useActions();
+  if (!isPenMode)
+    return null;
+  const action = actions["exit-pen-mode"];
+  return /* @__PURE__ */ jsx(
+    Button,
+    {
+      label: action.label,
+      iconLeft: action.icon,
+      onClick: () => action.onSelect("helper-buttons")
+    }
+  );
+});
+export {
+  ExitPenMode
+};
+//# sourceMappingURL=PenModeToggle.mjs.map

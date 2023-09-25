@@ -1,0 +1,1 @@
+{"version":3,"file":"fixup.d.ts","sourceRoot":"","sources":["../src/fixup.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,eAAe,EAAE,MAAM,eAAe,CAAA;AAE/C,OAAO,EAAE,QAAQ,EAAE,MAAM,oBAAoB,CAAA;AAE7C,gBAAgB;AAChB,wBAAgB,mBAAmB,CAAC,cAAc,EAAE,eAAe,CAAC,QAAQ,CAAC,6BAgB5E;AAED,gBAAgB;AAChB,wBAAgB,WAAW,CAAC,SAAS,EAAE,QAAQ;;;EA4e9C"}
